@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext", //컴파일 했을때 /build 에 생성되는 자바스크립트 버전
+    "module": "esnext", //모듈을 위한 코드 생성 설정
+    "strict": true, //엄격모드 사용 여부
+    "jsx": "preserve", //jsx 코드 생성 설정
+    "moduleResolution": "node", //모듈 해석 방법 설정
+    "resolveJsonModule": true, //TypeScript 모듈 내에서 json 모듈을 가져올수 있는 옵션
+    "allowSyntheticDefaultImports": true, //default export를 쓰지 않은 모듈도 default import가 가능하게 할건지 여부
+    "forceConsistentCasingInFileNames": true, //같은 파일에 대한 일관되지 않은 참조를 허용하지 않을지 여부
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,13 @@
+section {
+  margin-top: 1rem;
+  div.keys {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 600px) {
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}

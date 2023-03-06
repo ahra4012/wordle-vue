@@ -1,0 +1,44 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: flex;
+  margin-right: 8px;
+  margin-top: 1rem;
+  justify-content: right;
+  gap: 10px;
+}
+div.gameZone {
+  width: 340px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slide-up-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-move {
+  transition: transform 0.8s ease-in;
+}

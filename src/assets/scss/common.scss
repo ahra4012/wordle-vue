@@ -1,0 +1,58 @@
+main {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#nprogress .bar {
+  background-color: #cbc0d3;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #cbc0d3, 0 0 5px #cbc0d3;
+}
+
+.popup-wrap {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 101;
+  }
+  .popup-contents {
+    width: 675px;
+    position: relative;
+    z-index: 102;
+    background: #ffffff;
+    padding: 50px 40px;
+    .btnClose {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      width: 24px;
+      height: 24px;
+      font-size: 0;
+      color: transparent;
+    }
+    .popup-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #dddddd;
+    }
+  }
+}
