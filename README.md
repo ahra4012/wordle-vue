@@ -16,7 +16,7 @@ Vue3 + TypeScript + Vite
 
 - 상태관리는 pinia로 관리
 - msw로 api mock을 만들어서 테스트
-- elmentPlus, vuetify 2개의 UI Framework 사용
+- elmentPlus, vuetify 2개의 UI Framework 사용 <--이 부분 수정해야함
 - eslint plugin 설치
 - prettier 는 vscode 에서 설정
 
